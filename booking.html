@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Записаться — Барбершоп «Бородинский»</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <a href="#" class="page-header__logo">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/logotype-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px"
+              srcset="img/logotype-tablet.svg"
+            />
+            <img
+              src="img/logotype-mobile.svg"
+              alt="Логотип Барбершопа «Бородинский»"
+            />
+          </picture>
+        </a>
+
+        <nav class="page-header__nav main-nav">
+          <button class="main-nav__toggle"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__site-menu site-menu">
+              <li class="site-menu__item"><a href="index.html">Главная</a></li>
+              <li class="site-menu__item">
+                <a href="cases.html">Наши работы</a>
+              </li>
+              <li class="site-menu__item">
+                <a href="booking.html">Записаться</a>
+              </li>
+              <li class="site-menu__item"><a href="#">Контакты</a></li>
+              <li class="site-menu__item"><a href="#">HTML Academy</a></li>
+            </ul>
+            <ul class="main-nav__user-menu user-menu">
+              <li class="user-menu__item">
+                <a href="#">
+                  <svg width="16" class="booking__beard-icon">
+                    <use xlink:href="img/icons/sprite.svg#icon-login"></use>
+                  </svg>
+                  <span>Войти</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="login-page login-page--closed">
+          <div class="login-page__wrapper">
+            <h3 class="login-page__title">Личный кабинет</h3>
+            <p class="login-page__info">
+              Введите свой логин и пароль, чтобы войти
+            </p>
+            <form action="" class="login-page__form">
+              <div class="login-page__name-wrapper">
+                <input
+                  type="text"
+                  name="login-page-name"
+                  class="login-page__name"
+                  placeholder="Логин"
+                />
+              </div>
+              <div class="login-page__password-wrapper">
+                <input
+                  type="password"
+                  name="login-page-password"
+                  class="login-page__password"
+                  placeholder="Пароль"
+                />
+              </div>
+              <input
+                type="checkbox"
+                name="remember-me-checkbox"
+                id="remember-me-checkbox"
+                class="login-page__remember-checkbox"
+              />
+              <label
+                for="remember-me-checkbox"
+                class="login-page__remember-text"
+                >Запомните меня</label
+              >
+              <a href="#" class="login-page__remind-password-link"
+                >Я забыл пароль!</a
+              >
+              <button type="submit" class="login-page__login-btn btn">
+                Войти
+              </button>
+              <button class="login-page__close-btn btn">Закрыть</button>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <section class="booking">
+          <h2 class="booking__title">Запись на стрижку</h2>
+          <a href="index.html" class="booking__to-main btn">На главную</a>
+          <form action="" class="booking__form">
+            <section class="booking__main">
+              <input type="text" class="booking__input" placeholder="Фамилия" />
+              <input type="text" class="booking__input" placeholder="Имя" />
+              <input
+                type="text"
+                class="booking__input"
+                placeholder="Отчество"
+              />
+              <input
+                type="tel"
+                class="booking__input"
+                placeholder="Контактный телефон"
+              />
+              <input
+                type="email"
+                class="booking__input"
+                placeholder="Контактный e-mail"
+              />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="booking__textarea"
+                placeholder="Доп. информация для мастера"
+              ></textarea>
+            </section>
+
+            <section class="booking__beard">
+              <h4 class="booking__beard-title">Выберите модель бороды:</h4>
+              <div class="booking__beard-wrapper">
+                <input
+                  type="radio"
+                  name="beard-form"
+                  id="admiral"
+                  class="booking__beard-radio"
+                  value="admiral"
+                  checked
+                />
+                <label for="admiral" class="booking__beard-label"
+                  >адмирал
+                </label>
+                <input
+                  type="radio"
+                  name="beard-form"
+                  id="lamberjack"
+                  class="booking__beard-radio"
+                  value="lamberjack"
+                />
+                <label for="lamberjack" class="booking__beard-label"
+                  >лесоруб
+                </label>
+                <input
+                  type="radio"
+                  name="beard-form"
+                  id="polar"
+                  class="booking__beard-radio"
+                  value="polar"
+                />
+                <label for="polar" class="booking__beard-label"
+                  >полярник
+                </label>
+                <input
+                  type="radio"
+                  name="beard-form"
+                  id="boyar"
+                  class="booking__beard-radio"
+                  value="boyar"
+                />
+                <label for="boyar" class="booking__beard-label">боярин </label>
+                <input
+                  type="radio"
+                  name="beard-form"
+                  id="wiseman"
+                  class="booking__beard-radio"
+                  value="wiseman"
+                />
+                <label for="wiseman" class="booking__beard-label"
+                  >мудрец
+                </label>
+              </div>
+            </section>
+
+            <section class="booking__extras">
+              <h4 class="booking__extras-title">Дополнительные услуги:</h4>
+              <div class="booking__extras-wrapper">
+                <input
+                  type="checkbox"
+                  name="extras-form"
+                  id="beard-painting"
+                  class="booking__extras-checkbox"
+                  value="beard-painting"
+                  checked
+                />
+                <label for="beard-painting" class="booking__extras-label"
+                  >Подкрасить бороду</label
+                >
+                <input
+                  type="checkbox"
+                  name="extras-form"
+                  id="mustache-twisting"
+                  class="booking__extras-checkbox"
+                  value="mustache-twisting"
+                  checked
+                />
+                <label for="mustache-twisting" class="booking__extras-label"
+                  >Накрутить усы</label
+                >
+                <input
+                  type="checkbox"
+                  name="extras-form"
+                  id="beard-combing"
+                  class="booking__extras-checkbox"
+                  value="beard-combing"
+                />
+                <label for="beard-combing" class="booking__extras-label"
+                  >Причесать бороду</label
+                >
+                <input
+                  type="checkbox"
+                  name="extras-form"
+                  id="temple-trimming"
+                  class="booking__extras-checkbox"
+                  value="temple-trimming"
+                />
+                <label for="temple-trimming" class="booking__extras-label"
+                  >Подровнять виски</label
+                >
+                <input
+                  type="checkbox"
+                  name="extras-form"
+                  id="grey-off"
+                  class="booking__extras-checkbox"
+                  value="grey-off"
+                />
+                <label for="grey-off" class="booking__extras-label"
+                  >Убрать седину</label
+                >
+                <input
+                  type="checkbox"
+                  name="extras-form"
+                  id="bald-polishing"
+                  class="booking__extras-checkbox"
+                  value="bald-polishing"
+                />
+                <label for="bald-polishing" class="booking__extras-label"
+                  >Отполировать лысину</label
+                >
+              </div>
+            </section>
+            <button type="submit" class="booking__send btn">
+              Отправить заявку
+            </button>
+          </form>
+        </section>
+
+        <div class="booking__modal booking__modal--closed">
+          <div class="booking__modal-failure booking__modal-failure--closed">
+            <h3 class="booking__modal-title">Неудача</h3>
+            <p class="booking__modal-text">
+              Что-то пошло не так. Проверьте выделенные красным поля формы.
+            </p>
+            <button type="button" class="booking__modal-btn btn">Ок</button>
+          </div>
+
+          <div class="booking__modal-success booking__modal-success--closed">
+            <h3 class="booking__modal-title">Это успех!</h3>
+            <p class="booking__modal-text">
+              Ваша заявка отправлена. Ожидайте, мы свяжемся с вами как только
+              будет минутка.
+            </p>
+            <button type="button" class="booking__modal-btn btn">
+              Закрыть окно
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="page-footer">
+        <section class="page-footer__contacts contacts">
+          <b class="contacts__title">Барбершоп Бородинский </b>
+          <a href="#" class="contacts__adress"
+            >г. Санкт-Петербург, ул. Большая Конюшенная 19/8</a
+          >
+          <a href="tel:+78125556666" class="contacts__phone"
+            ><span>Тел.:</span>+7 (812) 555-66-66</a
+          >
+        </section>
+        <section class="page-footer__social social">
+          <b class="social__text">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--vk">
+                <img src="img/icons/vk-icon-small.png" alt="" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--fb">
+                <img src="img/icons/facebook-icon-small.png" alt="" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--inst">
+                <img src="img/icons/insta-icon-small.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано:</span>
+          <a href="#" class="copyright__link btn">HTML Academy</a>
+        </section>
+      </footer>
+    </div>
+
+    <script src="js/nav.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
